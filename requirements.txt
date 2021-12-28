@@ -1,0 +1,11 @@
+# Framework
+selenium
+
+# Html Report
+html-testRunner
+
+# Database Connector
+mysql-connector-python
+
+# Driver Manager
+webdriver-manager
