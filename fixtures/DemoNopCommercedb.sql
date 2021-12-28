@@ -137,7 +137,7 @@ CREATE TABLE `customerinfo` (
 
 LOCK TABLES `customerinfo` WRITE;
 /*!40000 ALTER TABLE `customerinfo` DISABLE KEYS */;
-INSERT INTO `customerinfo` VALUES (1,'Andrei','Popescu','fffff@gmail.com','The Best Company','Romania','Bucuresti','Str Victoriei nr 25','Str Victoriei nr 30','45000','0700000000','','Next Day Air','Pending',109.98,1037,1);
+INSERT INTO `customerinfo` VALUES (1,'Andrei','Popescu','fffff@gmail.com','The Best Company','Romania','Bucuresti','Str Victoriei nr 25','Str Victoriei nr 30','45000','0700000000','','Next Day Air','Pending',109.98,1048,1);
 /*!40000 ALTER TABLE `customerinfo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -330,7 +330,7 @@ begin
     DECLARE lastordertotal float;
     DECLARE lastordernumber int;
 	SET custid = 0;
-	SELECT TableID INTO custid FROM customerinfo;
+	SELECT MAX(TableID) INTO custid FROM customerinfo;
 	SELECT FirstName, LastName, Email, Company, Country, City, Address1, Address2, Zip, PhoneNumber, FaxNumber, ShippingMethod, OrderStatus, OrderTotal, OrderNumber INTO
     lastfName, lastlname, lastemail, lastcompany, lastcountry, lastcity, lastaddress1, lastaddress2, lastpostalcode, lastphonenumber, lastfax, lastshippingmethod, lastorderstatus, lastordertotal, lastordernumber
     FROM customerinfo WHERE TableID = custid;
@@ -383,7 +383,7 @@ begin
 	DECLARE lastItemQuantity int;
     DECLARE lastGiftWrap enum('Yes','No');
     SET customerid = 0;
-	SELECT ID INTO customerid FROM customers;
+	SELECT MAX(ID) INTO customerid FROM customers;
 	SELECT ItemName, ItemPrice, ItemRentable, ItemCustom, ItemDiscountForQuantity, ItemManufacturer, ItemSKU, ItemQuantity, GiftWrap INTO
     lastItemName, lastItemPrice, lastItemRentable, lastItemCustom, lastItemDiscountForQuantity, lastItemManufacturer, lastItemSKU, lastItemQuantity, lastGiftWrap
     FROM customers WHERE ID = customerid;
@@ -430,7 +430,7 @@ IN number int)
 begin
 	DECLARE custid INT;
     SET custid = 0;
-    SELECT ID INTO custid FROM customers;
+    SELECT MAX(ID) INTO custid FROM customers;
 	INSERT INTO customerinfo (FirstName, LastName, Email, Company, Country, City, Address1, Address2, Zip, PhoneNumber, FaxNumber, ShippingMethod, OrderStatus, OrderTotal, OrderNumber, CustomerID)
     VALUES (fname, lname, mail, Comp, Countr, cy, Add1, Add2, postalcode, phone, fax, shipmethod, status, total, number, custid);
 end ;;
@@ -471,4 +471,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-28 16:28:36
+-- Dump completed on 2021-12-28 23:00:26
