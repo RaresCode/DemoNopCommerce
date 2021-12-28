@@ -29,6 +29,8 @@ Testing if all informations about every single item available for selling from e
 
 - Import cloned repository as project
 
+- Import the self-contained file available in fixtures folder
+
 - Make sure you change database connection informations such as host, username, password to yours in the DatabaseWrapper.py available in the helpers folder otherwise it will not work
 
 - Install all the required packages:
