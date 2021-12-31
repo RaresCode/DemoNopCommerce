@@ -1,6 +1,6 @@
 
 # Testing DemoNopCommerce
-Test if all informations about every single item available for selling from every category correspond to the ones present in the database, test end to end workflow of ordering an item, creating an entry in the database with informations about the item and about shipping info, validate if the info have been saved succesfully in the database.
+Test if all information about every single item available for selling from every category correspond to the ones present in the database, test end to end workflow of ordering an item, creating an entry in the database with informations about the item and about shipping info, validate if the info have been saved succesfully in the database.
 
 ## Features
 
