@@ -15,6 +15,9 @@ Test if all information about every single item available for selling from every
 
 ![d](https://user-images.githubusercontent.com/91252395/147587792-935aed70-f3bc-4ab3-90e6-65231c45febf.gif)
 
+## Watch The Entire Testing Process
+
+https://user-images.githubusercontent.com/91252395/149943071-41502bac-bf34-4529-8ec9-e029091064be.mp4
 
 ## HtmlTestRunner Result Example
 
