@@ -1,6 +1,14 @@
 
 # Testing DemoNopCommerce
-Test if all information about every single item available for selling from every category correspond to the ones present in the database, test end to end workflow of ordering an item, creating an entry in the database with informations about the item and about shipping info, validate if the info have been saved succesfully in the database.
+The aim of this project is to ensure the accuracy and reliability of the item information stored in the database while validating the end-to-end workflow of ordering an item. The project will test whether all information about every single item available for sale in various categories corresponds to the data in the database. Additionally, the project will verify the successful creation of entries in the database with comprehensive details about the item and shipping information, followed by a validation process to confirm that the information has been saved successfully.
+
+## Project Objectives:
+
+- Information Validation: Verify if all information regarding every item available for sale from each category matches the corresponding data present in the database.
+- End-to-End Workflow Testing: Test the entire order workflow, including item selection, order placement, database entry creation, and shipping information capture.
+- Database Entry Verification: Validate that the database accurately reflects the item and shipping information after an order is placed.
+- Error Detection and Reporting: Identify any inconsistencies, inaccuracies, or discrepancies in the item information or database entries and report them for resolution.
+- Reliability and Data Integrity: Ensure that the data is securely stored in the database, maintaining its integrity throughout the order workflow process.
 
 ## Features
 
