@@ -12,7 +12,6 @@ The aim of this project is to ensure the accuracy and reliability of the item in
 
 ## Features
 
-- Action Wrapper Pattern
 - Database Testing
 - Html Reporting
 - WebDriverManager
